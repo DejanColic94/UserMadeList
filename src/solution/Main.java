@@ -30,9 +30,27 @@ public class Main {
         list1.removeItem(new Node("12"));
         list1.traverse(list1.getRoot());
 
+        System.out.println("================================================================");
+
+        SearchTree tree = new SearchTree(null);
 
 
+        String stringData2 = " 5 0 8 2 7 6 1 4 3 9";
 
+        String[] data2 = stringData2.split(" ");
+        for (String s : data2) {
+            tree.addItem(new Node(s));
+        }
+
+        tree.traverse(tree.getRoot());
+
+        tree.traverse(tree.getRoot());
+        tree.removeItem(new Node("6"));
+        tree.traverse(tree.getRoot());
+
+        tree.traverse(tree.getRoot());
+        tree.removeItem(new Node("9"));
+        tree.traverse(tree.getRoot());
 
     }
 }
